@@ -1,0 +1,29 @@
+aid: chempirical
+name: Chempirical (Nitramine)
+description: 'Chempirical (Nitramine) is a company surfaced via the API Evangelist harvest backlog (source:
+  new-submission) and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/chempirical/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-09'
+modified: '2026-10-09'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://chempirical.com
+- type: Documentation
+  url: https://chempirical.com/api/
+x-submission-notes: Free keyless chemistry JSON API (compounds, reactions)
+x-submission-probe: /api/ 200 HTML docs; /openapi.json and /api/openapi.json 404 (no contract found);
+  invented path 404
+x-submitted-by: marty@chempirical.com (apis.io/add, 2026-10-09)
