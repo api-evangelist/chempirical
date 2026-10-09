@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/chempirical/main/json-schema/chempirical-get-api-molecule-svg50782-response-schema.json",
+  "title": "GetApiMoleculeSvg50782Response",
+  "x-generated": "2026-10-09",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/GetApiMoleculeSvg50782Response",
+  "type": "object",
+  "properties": {
+    "svg": {
+      "type": "string",
+      "description": "SVG structure image"
+    }
+  }
+}

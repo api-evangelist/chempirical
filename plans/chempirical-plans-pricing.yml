@@ -1,0 +1,15 @@
+name: Chempirical plans
+generated: '2026-10-09'
+method: searched
+source: https://chempirical.com/api/
+audience: developer-api
+pricing_basis: free
+published: false
+delivery:
+  delivery: managed
+plans:
+- name: Free JSON API
+  description: Read-only JSON for the compounds, reactions and physical data behind the site.
+  price_text: No key, no sign-up.
+  features: [No API key required, CORS open to every origin]
+  limits: [Please keep it to a few requests per second.]

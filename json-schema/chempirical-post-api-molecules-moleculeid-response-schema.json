@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/chempirical/main/json-schema/chempirical-post-api-molecules-moleculeid-response-schema.json",
+  "title": "PostApiMoleculesMoleculeidResponse",
+  "x-generated": "2026-10-09",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/PostApiMoleculesMoleculeidResponse",
+  "type": "object",
+  "properties": {
+    "cas": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "molarMass": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+name: Chempirical API conventions
+generated: '2026-10-09'
+method: searched
+source: https://chempirical.com/api/
+auth: none (No key, no sign-up.)
+format: Responses are UTF-8 JSON with CORS open to every origin.
+units: Units are SI or the units chemists read (g/mol, g/mL, °C, mmHg).
+compatibility: New fields may appear at any time, so ignore the ones you do not know.
+pagination: {style: offset, params: [limit, offset], note: limit at most 200 on search endpoints; substructure results carry total and capped}
+errors: {envelope: '{"error": "<message>"}', not_found: 404, evidence: 'GET /api/molecules/doesnotexist -> 404 {"error":"no molecule with that CAS number"}'}
+idempotency: {coverage: na, note: Read-only API; the only POST (/api/molecules/resolve) is a lookup with no side effects and is same-origin only.}
+reversibility: {coverage: na, note: Read-only API with no write surface.}

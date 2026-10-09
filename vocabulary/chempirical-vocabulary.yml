@@ -1,0 +1,45 @@
+generated: '2026-10-09'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/chempirical-openapi-generated.yml
+vocabulary:
+  name: Chempirical Domain Vocabulary
+  description: 'Terms declared by Chempirical''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-09'
+  terms:
+  - term: GetApiMoleculeSvg50782Response
+    definition: 'Object declared by the contract with fields: svg.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/GetApiMoleculeSvg50782Response
+  - term: GetApiMoleculesMoleculeidResponse
+    definition: 'Object declared by the contract with fields: name, properties, physical.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/GetApiMoleculesMoleculeidResponse
+  - term: PostApiMoleculesMoleculeidRequest
+    definition: 'Object declared by the contract with fields: terms.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/PostApiMoleculesMoleculeidRequest
+  - term: PostApiMoleculesMoleculeidResponse
+    definition: 'Object declared by the contract with fields: cas, name, molarMass.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/PostApiMoleculesMoleculeidResponse
+  - term: GetApiReactionsHenryNitroaldolResponse
+    definition: 'Object declared by the contract with fields: participants.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/GetApiReactionsHenryNitroaldolResponse
+  - term: GetApiReactionsHenryNitroaldolScaleResponse
+    definition: 'Object declared by the contract with fields: participants.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/GetApiReactionsHenryNitroaldolScaleResponse
+  - term: GetApiApiidResponse
+    definition: 'Object declared by the contract with fields: results.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/chempirical-openapi-generated.yml#/components/schemas/GetApiApiidResponse

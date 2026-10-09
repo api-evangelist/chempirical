@@ -1,0 +1,10 @@
+name: Chempirical rate limits
+generated: '2026-10-09'
+method: searched
+source: https://chempirical.com/api/
+limit_count: 1
+limits:
+- name: Courtesy request rate
+  limit_text: Please keep it to a few requests per second.
+  scope: per-client
+  note: A stated courtesy request, not a numeric enforced limit; no rate-limit response headers are documented.

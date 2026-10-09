@@ -1,0 +1,44 @@
+generated: '2026-10-09'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/chempirical-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.chempirical.com, chempirical.com; verdict absent. Candidate tools
+  below are derived from the 6 operation(s) in the provider's own OpenAPI (6 listed); they describe what a server WOULD expose, not one that exists.
+tools:
+- name: get_api_molecule_svg_50_78_2
+  operationId: get_api_molecule_svg_50_78_2
+  method: GET
+  path: /api/molecule-svg/50-78-2
+  description: The structure as SVG.
+- name: get_api_molecules_moleculeid
+  operationId: get_api_molecules_moleculeid
+  method: GET
+  path: /api/molecules/{moleculeid}
+  description: One compound with names, formula, identifiers, molar and exact mass, density, melting and boiling point, Antoine constants, azeotropes,
+    reactions, and structure
+- name: post_api_molecules_moleculeid
+  operationId: post_api_molecules_moleculeid
+  method: POST
+  path: /api/molecules/{moleculeid}
+  description: POST /api/molecules/64-17-5
+- name: get_api_reactions_henry_nitroaldol
+  operationId: get_api_reactions_henry_nitroaldol
+  method: GET
+  path: /api/reactions/henry-nitroaldol
+  description: 'One reaction with its participants: role, equivalents, molar mass and density of each.'
+- name: get_api_reactions_henry_nitroaldol_scale
+  operationId: get_api_reactions_henry_nitroaldol_scale
+  method: GET
+  path: /api/reactions/henry-nitroaldol/scale
+  description: Scale a reaction from one reagent by specifying anchor CAS, unit and value.
+- name: get_api_apiid
+  operationId: get_api_apiid
+  method: GET
+  path: /api/{apiid}
+  description: Every set of Antoine constants in the database, with its valid temperature range.
