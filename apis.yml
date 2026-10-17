@@ -58,16 +58,18 @@ common:
 - type: Login
   url: https://chempirical.com/auth/login
 apis:
-- aid: chempirical:chempirical-api
-  name: Chempirical (Nitramine) API
-  description: 'Chempirical (Nitramine) API as documented publicly: 6 operations.
-    Contract generated from the documentation by API Evangelist (2026-10-09); not
-    the provider''s own document.'
+- aid: chempirical:chempirical-chempirical-nitramine-api-api
+  name: Chempirical Chempirical (Nitramine) API
+  description: >-
+    The Chempirical (Nitramine) API API from Chempirical — 1 operation(s) for chempirical (nitramine)
+    api.
   humanURL: https://chempirical.com/api/
+  baseURL: https://chempirical.com/api
+  tags:
+  - Chempirical (Nitramine) API
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/chempirical-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/chempirical-chempirical-nitramine-api-api-openapi.yml
   - type: JSONSchema
     url: json-schema/chempirical-get-api-molecules-moleculeid-response-schema.json
   - type: JSONSchema
@@ -80,11 +82,72 @@ apis:
     url: json-schema/chempirical-post-api-molecules-moleculeid-response-schema.json
   - type: JSONSchema
     url: json-schema/chempirical-get-api-molecule-svg50782-response-schema.json
+- aid: chempirical:chempirical-molecule-svg-api
+  name: Chempirical Molecule Svg API
+  description: The Molecule Svg API from Chempirical — 1 operation(s) for molecule svg.
+  humanURL: https://chempirical.com/api/
   baseURL: https://chempirical.com/api
   tags:
-  - Chemistry
-  - Compounds
+  - Molecule Svg
+  properties:
+  - type: OpenAPI
+    url: openapi/chempirical-molecule-svg-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-molecules-moleculeid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-reactions-henry-nitroaldol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-reactions-henry-nitroaldol-scale-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-post-api-molecules-moleculeid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-molecule-svg50782-response-schema.json
+- aid: chempirical:chempirical-molecules-api
+  name: Chempirical Molecules API
+  description: The Molecules API from Chempirical — 1 operation(s) for molecules.
+  humanURL: https://chempirical.com/api/
+  baseURL: https://chempirical.com/api
+  tags:
+  - Molecules
+  properties:
+  - type: OpenAPI
+    url: openapi/chempirical-molecules-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-molecules-moleculeid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-reactions-henry-nitroaldol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-reactions-henry-nitroaldol-scale-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-post-api-molecules-moleculeid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-molecule-svg50782-response-schema.json
+- aid: chempirical:chempirical-reactions-api
+  name: Chempirical Reactions API
+  description: The Reactions API from Chempirical — 2 operation(s) for reactions.
+  humanURL: https://chempirical.com/api/
+  baseURL: https://chempirical.com/api
+  tags:
   - Reactions
+  properties:
+  - type: OpenAPI
+    url: openapi/chempirical-reactions-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-molecules-moleculeid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-reactions-henry-nitroaldol-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-apiid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-reactions-henry-nitroaldol-scale-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-post-api-molecules-moleculeid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/chempirical-get-api-molecule-svg50782-response-schema.json
 x-submission-notes: Free keyless chemistry JSON API (compounds, reactions)
 x-submission-probe: /api/ 200 HTML docs; /openapi.json and /api/openapi.json 404 (no
   contract found); invented path 404

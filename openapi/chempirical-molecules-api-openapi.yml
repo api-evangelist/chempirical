@@ -1,0 +1,104 @@
+openapi: 3.2.0
+info:
+  title: Chempirical (Nitramine) Molecules API
+  version: '2026-10-09'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-09: 6 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Chempirical (Nitramine) has published no machine-readable contract that the pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 5
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-09'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://chempirical.com/api
+tags:
+- name: Molecules
+paths:
+  /api/molecules/{moleculeid}:
+    get:
+      operationId: get_api_molecules_moleculeid
+      tags:
+      - Molecules
+      summary: One compound with names, formula, identifiers, molar and exact mass, density…
+      x-source: https://chempirical.com/api
+      parameters:
+      - name: moleculeid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiMoleculesMoleculeidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at moleculeId
+    post:
+      operationId: post_api_molecules_moleculeid
+      tags:
+      - Molecules
+      summary: POST /api/molecules/64-17-5
+      x-source: https://chempirical.com/api
+      parameters:
+      - name: moleculeid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiMoleculesMoleculeidRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiMoleculesMoleculeidResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -s https://chempirical.com/api/molecules/64-17-5 | jq '.name, .properties.molar_mass_g_per_mol, .physical.boilingPoint.text'\n\"Ethanol\"\n46.069\n\"78.5 °C\" \n /api/molecules?q= \n Search compounds by name, CAS number, formula or SMILES. Parameters: q, limit (at most 200), offset. \n Example curl -s 'https://chempirical.com/api/molecules?q=caffeine&limit=2' | jq '.results[] | {cas, name, molarMass}'\n"
+        collapsed_from: 2 example path(s) differing only at moleculeId
+components:
+  schemas:
+    PostApiMoleculesMoleculeidResponse:
+      type: object
+      properties:
+        cas:
+          type: string
+        name:
+          type: string
+        molarMass:
+          type: number
+    PostApiMoleculesMoleculeidRequest:
+      type: object
+      properties:
+        terms:
+          type: array
+          items:
+            type: string
+    GetApiMoleculesMoleculeidResponse:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Compound name
+        properties:
+          type: object
+          description: Compound properties including molar mass
+        physical:
+          type: object
+          description: Physical properties including boiling point

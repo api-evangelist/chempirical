@@ -1,0 +1,52 @@
+openapi: 3.2.0
+info:
+  title: Chempirical (Nitramine) API
+  version: '2026-10-09'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-09: 6 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Chempirical (Nitramine) has published no machine-readable contract that the pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 5
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-09'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://chempirical.com/api
+tags:
+- name: Chempirical (Nitramine) API
+paths:
+  /api/{apiid}:
+    get:
+      operationId: get_api_apiid
+      tags:
+      - Chempirical (Nitramine) API
+      summary: Every set of Antoine constants in the database, with its valid temperature range
+      x-source: https://chempirical.com/api
+      parameters:
+      - name: apiid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiApiidResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 4 example path(s) differing only at apiId
+components:
+  schemas:
+    GetApiApiidResponse:
+      type: object
+      properties:
+        results:
+          type: array
+          description: Array of Antoine constant sets with valid temperature ranges

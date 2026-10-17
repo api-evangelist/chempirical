@@ -1,0 +1,31 @@
+{
+  "provider": "chempirical",
+  "sources": [
+    "_ae-authored/chempirical-openapi-generated.yml"
+  ],
+  "outputs": [
+    "chempirical-chempirical-nitramine-api-api-openapi.yml",
+    "chempirical-molecule-svg-api-openapi.yml",
+    "chempirical-molecules-api-openapi.yml",
+    "chempirical-reactions-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "chempirical-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "chempirical-openapi-generated.yml: tagged paths GET /api/molecule-svg/50-78-2 -> Molecule Svg",
+    "chempirical-openapi-generated.yml: tagged paths GET /api/molecules/{moleculeid} -> Molecules",
+    "chempirical-openapi-generated.yml: tagged paths POST /api/molecules/{moleculeid} -> Molecules",
+    "chempirical-openapi-generated.yml: tagged paths GET /api/reactions/henry-nitroaldol -> Reactions",
+    "chempirical-openapi-generated.yml: tagged paths GET /api/reactions/henry-nitroaldol/scale -> Reactions",
+    "chempirical-openapi-generated.yml: tagged paths GET /api/{apiid} -> Chempirical (Nitramine) API",
+    "chempirical-openapi-generated.yml: declared missing tag: Chempirical (Nitramine) API",
+    "chempirical-openapi-generated.yml: declared missing tag: Molecule Svg",
+    "chempirical-openapi-generated.yml: declared missing tag: Molecules",
+    "chempirical-openapi-generated.yml: declared missing tag: Reactions",
+    "apis.yml register: written (+4 apis, 4 total)"
+  ],
+  "skipped": []
+}
