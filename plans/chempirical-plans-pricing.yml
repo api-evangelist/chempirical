@@ -13,3 +13,15 @@ plans:
   price_text: No key, no sign-up.
   features: [No API key required, CORS open to every origin]
   limits: [Please keep it to a few requests per second.]
+x-canonical:
+  generated: '2026-10-18'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Free JSON API
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
